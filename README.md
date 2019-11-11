@@ -12,9 +12,7 @@ only the encoder half is used.
 
 # Pre-Trained autoencoder model (CAE and FCAE)
 
-The pre-trained CAE and FCAE parameters can get by https://pan.baidu.com/s/1eoEBhiLxbztNO7Z_IyM3WA and the password is 3h8n. The pre-trained CAE parameters you can place it in "./CAE/parameters/" and .
-
-the pre-trained FCAE parameters places in "./FCAE/model_parameters/".
+The pre-trained CAE and FCAE parameters can get by https://pan.baidu.com/s/1eoEBhiLxbztNO7Z_IyM3WA and the password is 3h8n. The pre-trained CAE parameters you can place it in "./CAE/parameters/" and the pre-trained FCAE parameters places in "./FCAE/model_parameters/".
 
 # Requirements
 
