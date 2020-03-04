@@ -82,14 +82,10 @@ def data_fusion(desc1, desc2, fusion_method = 'cat'):
         from train_FCAE import fusion_test_autoencoder
 
         AE_model_parameters_path = "../FCAE/model_parameters/"
-        
-        AE_model_parameters_path_1 = AE_model_parameters_path + "100_SAE_4224_densenet169_hardnet_1024_64_0.0001.pth"
-        
-        desc = fusion_test_autoencoder(AE_model_parameters_path_1, 4224, 1024, 'CPU', desc)
 
-        AE_path = AE_model_parameters_path + "100_SAE_1024_densenet169_hardnet_256_64_0.0001.pth"
+        AE_path = AE_model_parameters_path + "500_4224_densenet169_hardnet_256_64_0.0001.pth"
 
-        desc = fusion_test_autoencoder(AE_path, 1024, 256, 'CPU', desc)
+        desc = fusion_test_autoencoder(AE_path, 256, 'CPU', desc)
 
     return desc
 
@@ -107,6 +103,7 @@ def Hardnet_desc(img_patch):
         hardnet_desc -= 0.0001433593
 
         hardnet_desc /= 0.08838826
+
     if args.dataset == 'v':
 
         hardnet_desc -= -0.000108431
