@@ -20,20 +20,12 @@ class autoencoder_prelu_4224(nn.Module):
             nn.BatchNorm1d(512),
             nn.PReLU(),
 
-            nn.Linear(512, 256),
-            nn.BatchNorm1d(256),
-            nn.PReLU(),
-
-            nn.Linear(256, dimension),
+            nn.Linear(512, dimension),
             nn.BatchNorm1d(dimension),
             nn.PReLU(),
         )
         self.decoder = nn.Sequential(
-            nn.Linear(dimension, 256),
-            nn.BatchNorm1d(256),
-            nn.PReLU(),
-
-            nn.Linear(256, 512),
+            nn.Linear(dimension, 512),
             nn.BatchNorm1d(512),
             nn.PReLU(),
 
@@ -57,5 +49,3 @@ class autoencoder_prelu_4224(nn.Module):
         decoded = self.decoder(encoded)
 
         return encoded, decoded
-
-
