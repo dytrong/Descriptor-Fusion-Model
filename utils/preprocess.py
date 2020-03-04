@@ -9,6 +9,8 @@ import torchvision.transforms as transforms
 #####change images to tensor#####
 def change_patch_size(img_patch, model_size=224, img_channel=3):
 
+    img_patch = img_patch.copy()
+
     img_to_tensor = transforms.ToTensor()
 
     resized_seq = torch.zeros(len(img_patch), img_channel, model_size, model_size)
@@ -18,8 +20,6 @@ def change_patch_size(img_patch, model_size=224, img_channel=3):
         if img_channel == 1:
 
             img_patch[i] = cv2.cvtColor(img_patch[i], cv2.COLOR_BGR2GRAY)
-
-            #img_patch[i] = (img_patch[i] - np.mean(img_patch[i])) / (1e-8 + np.std(img_patch[i]))
 
         tmp_patch = cv2.resize(img_patch[i], (model_size, model_size))
 
