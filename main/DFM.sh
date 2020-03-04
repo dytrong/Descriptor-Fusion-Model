@@ -16,15 +16,15 @@ fusion_flag=1
 fusion_method='AE'
 
 ####128, 256
-fusion_dimension=128
+fusion_dimension=256
 
 ####AE fusion train epoch
-fusion_epoch=200
+fusion_epoch=500
 batch_size=64
 lr=0.0001
 
 ####-u是为了禁止缓存，让结果可以直接进入日志文件
-while [ ${fusion_dimension} != '256' ]
+while [ ${fusion_dimension} != '512' ]
 do
 ######auto encoder 预训练模型地址
 ####alexnet, resnet, densenet
