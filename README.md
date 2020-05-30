@@ -1,6 +1,6 @@
 # Descriptor-Fusion-Model (DFM)
 
-![image](https://github.com/dytrong/Descriptor-Fusion-Model-v2/blob/master/main/log/system_fusion.jpg)
+![image](https://github.com/dytrong/Descriptor-Fusion-Model/blob/master/main/log/system_fusion.jpg)
 
 Fig. 1: The details of our descriptor fusion model (DFM). The descriptor fusion steps are as follows. First, we use a keypoint
 detector (SIFT in our experiments) to detect K keypoints and then extract 64 × 64 image patches around these keypoints.
@@ -30,7 +30,7 @@ Our DFM descriptor results can be seen in log file.
 
 # Compared with state-of-the-art descriptors
 
-![image](https://github.com/dytrong/Descriptor-Fusion-Model-v2/blob/master/main/log/ours.jpg)
+![image](https://github.com/dytrong/Descriptor-Fusion-Model/blob/master/main/log/ours.jpg)
 
 Fig. 2: Qualitative comparison of five descriptors for keypoints matching. From top to bottom: SIFT [1], GeoDesc [2],
 ContextDesc [3], HardNet [4] and our DFM. The first two columns of images are from illumination sequences of Hpatches
