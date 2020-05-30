@@ -2,6 +2,7 @@
 
 ![image](https://github.com/dytrong/Descriptor-Fusion-Model/blob/master/main/log/system_fusion.jpg)
 
+
 Fig. 1: The details of our descriptor fusion model (DFM). The descriptor fusion steps are as follows. First, we use a keypoint
 detector (SIFT in our experiments) to detect K keypoints and then extract 64 × 64 image patches around these keypoints.
 Secondly, each of the image patches is fed into a trained CNN model and a pre-trained CNN model to generate two keypoint
