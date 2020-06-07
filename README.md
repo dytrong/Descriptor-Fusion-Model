@@ -1,5 +1,7 @@
 # Descriptor-Fusion-Model (DFM)
 
+This is a Pytorch implementation of "Keypoint Description by Descriptor Fusion Using Autoencoders." Zhuang Dai, Xinghong Huang, Weinan Chen, Chuangbing Chen, Li He, Shuhuan Wen, Hong Zhang.
+
 ![image](https://github.com/dytrong/Descriptor-Fusion-Model/blob/master/main/log/system_fusion.jpg)
 
 
