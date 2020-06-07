@@ -1,6 +1,7 @@
 # Descriptor-Fusion-Model (DFM)
 
-This is a Pytorch implementation of "Keypoint Description by Descriptor Fusion Using Autoencoders." Zhuang Dai, Xinghong Huang, Weinan Chen, Chuangbing Chen, Li He, Shuhuan Wen, Hong Zhang.
+This is a Pytorch implementation of "Keypoint Description by Descriptor Fusion Using Autoencoders." Zhuang Dai, Xinghong Huang, Weinan Chen, Chuangbing Chen, Li He, Shuhuan Wen, Hong Zhang. (ICRA 2020)
+
 
 ![image](https://github.com/dytrong/Descriptor-Fusion-Model/blob/master/main/log/system_fusion.jpg)
 
@@ -44,6 +45,7 @@ sequences.
 
 
 # References
+
 [1] D. G. Lowe, “Distinctive image features from scale-invariant keypoints,” International journal of computer vision, vol. 60, no. 2, pp. 91–110, 2004.
 
 [2] Z. Luo, T. Shen, L. Zhou, S. Zhu, R. Zhang, Y. Yao, T. Fang, and L. Quan, “Geodesc: Learning local descriptors by integrating geometry constraints,” in Proceedings of the European Conference on Computer Vision (ECCV), 2018, pp. 168–183.
